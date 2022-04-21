@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="surface"
+    android:layout_width="match_parent"
+    android:forceDarkAllowed="false"
+    android:layout_height="match_parent"
+    android:background="@color/ic_base_conversion_background"
+    tools:context=".SplashActivity">
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/textView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:foregroundTint="@color/white"
+        android:forceDarkAllowed="false"
+        app:srcCompat="@drawable/ic_base_conversion_foreground" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splash_linearProgressIndicator"
+        style="@style/Widget.Material3.LinearProgressIndicator"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:forceDarkAllowed="false"
+        tools:targetApi="q" />
+  </LinearLayout>
+
+
+
+  <!--    <com.google.android.material.button.MaterialButton-->
+  <!--        android:id="@+id/splash_chooseLocation"-->
+  <!--        android:layout_width="wrap_content"-->
+  <!--        android:layout_height="wrap_content"-->
+  <!--        style="@style/Widget.Material3.Button.TextButton.Icon"-->
+  <!--        android:text="@string/location"-->
+  <!--        app:icon="@drawable/ic_chevron_right"-->
+  <!--        app:iconGravity="textEnd"-->
+  <!--        android:layout_marginTop="128dp"-->
+  <!--        app:layout_constraintEnd_toEndOf="parent"-->
+  <!--        app:layout_constraintStart_toStartOf="parent"-->
+  <!--        app:layout_constraintTop_toBottomOf="@+id/imageView2"-->
+  <!--        android:visibility="invisible"-->
+  <!--        />-->
+
+
+
+  <!--    <com.google.android.gms.common.SignInButton-->
+  <!--        android:id="@+id/sign_in_google"-->
+  <!--        android:layout_width="wrap_content"-->
+  <!--        android:layout_height="wrap_content"-->
+  <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+  <!--        android:visibility="gone"-->
+  <!--        app:layout_constraintEnd_toEndOf="parent"-->
+  <!--        app:layout_constraintHorizontal_bias="0.498"-->
+  <!--        app:layout_constraintStart_toStartOf="parent"-->
+  <!--        app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/textView"
+      style="@style/TextAppearance.MaterialComponents.Overline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="288dp"
+      android:text="from"
+      android:textSize="11dp"
+      android:forceDarkAllowed="false"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/imageView" />
+
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="183dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="4dp"
+      android:layout_marginBottom="50dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:forceDarkAllowed="false"
+      app:srcCompat="@drawable/ic_blackcat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

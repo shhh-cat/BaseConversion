@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Base Conversion</string>
+    <string name="choose_source_base">Choose Source Base</string>
+    <string name="choose_destination_base">Choose Destination Base</string>
+    <string name="base_source">Input</string>
+    <string name="convert">Convert</string>
+    <string name="reset">Reset</string>
+    <string name="reverse">Reverse</string>
+</resources>
